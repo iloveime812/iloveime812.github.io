@@ -1,0 +1,195 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iloveime | Bio</title>
+    <!-- Подключаем современный шрифт Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Общие настройки */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: #050505; /* Глубокий черный фон */
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            /* Фоновый градиент для объема */
+            background-image: radial-gradient(circle at center, #111118 0%, #000000 100%);
+        }
+
+        /* Основная карточка */
+        .card {
+            width: 100%;
+            max-width: 350px;
+            background: rgba(255, 255, 255, 0.03); /* Прозрачный фон */
+            border: 1px solid rgba(255, 255, 255, 0.08); /* Тонкая рамка */
+            border-radius: 28px;
+            padding: 40px 20px;
+            text-align: center;
+            backdrop-filter: blur(15px); /* Эффект матового стекла */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: cardAppear 1s ease-out;
+        }
+
+        /* Аватарка */
+        .avatar-container {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Текстовые блоки */
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+
+        .username {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        /* Заголовки разделов */
+        .section-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #444;
+                        margin: 20px 0 10px;
+            text-align: left;
+            padding-left: 10px;
+            font-weight: 700;
+        }
+
+        /* Кнопки-ссылки */
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Эффект при нажатии/наведении */
+        .link-item:active, .link-item:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+        }
+
+        /* Анимация появления карточки */
+        @keyframes cardAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Небольшое свечение за карточкой */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; ri
+
+
+ght: -2px; bottom: -2px;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.05), transparent);
+            z-index: -1;
+            border-radius: 28px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Фото профиля -->
+        <div class="avatar-container">
+            <img src="?C:\Users\user\Desktop\Никитаphoto.jpg" alt="">
+        </div>
+
+        <h1>#ᥰр᧐з᧐ᥙчн᧐ᥴᴛь</h1>
+        <span class="username">@iloveime</span>
+
+        <!-- РАЗДЕЛ: ПРОЕКТЫ -->
+        <div class="section-label">Активные проекты</div>
+        <div class="links-group">
+            <a href="https://t.me/leveltoyou" class="link-item" target="_blank">Level teens</a>
+            <a href="https://t.me/DVIZNAARBATETMN" class="link-item" target="_blank">ДВИЖ НА АРБАТЕ</a>
+        </div>
+
+        <!-- РАЗДЕЛ: КОНТАКТЫ -->
+        <div class="section-label">Связаться со мной</div>
+        <div class="links-group">
+            <a href="https://t.me/iloveime" class="link-item" target="_blank">Telegram</a>
+            <a href="https://vk.ru/iloveonlymygrl" class="link-item" target="_blank">ВКонтакте</a>
+            <a href="mailto:iloveime812@gmail.com" class="link-item">Email почта</a>
+</div>
+
+<div class="section-label">Прочее</div>
+<a href="https://t.me/starsxanax_bot?start=ref_7871583683" class="link-item" target="_blank">Telegram stars</a>
+<a href="https://shuka.site/r/f8ujf" class="link-item" target="_blank">VPN</a>
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- Сам аудиоплеер (скрытый) -->
+<audio id="bg-audio" loop>
+    <source src="track.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Скрипт автоматического запуска при первом клике -->
+<script>
+    // Ждем, пока пользователь кликнет в любое место на сайте
+    document.addEventListener('click', function() {
+        const audio = document.getElementById('bg-audio');
+        
+        // Запускаем воспроизведение
+        audio.play().catch(function(error) {
+            console.log("Браузер заблокировал автовоспроизведение:", error);
+        });
+    }, { once: true }); // { once: true } значит, что код сработает только ОДИН раз при первом клике
+</script>
